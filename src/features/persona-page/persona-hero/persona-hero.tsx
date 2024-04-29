@@ -34,51 +34,27 @@ Example:
         }
       />
       <HeroButton
-        title="Translator"
-        description="English to French translator."
-        icon={<Languages />}
+        title="Clinical Research Guidance"
+        description="Get expert guidance on clinical research."
+        icon={<Atom />}
         onClick={() =>
           personaStore.newPersonaAndOpen({
-            name: "English to French translator",
+            name: "Clinical Research expert.",
             personaMessage:
-              "You are an expert in translating English to French. You will be provided with a sentence in English, and your task is to translate it into French.",
-            description: "English to French translator.",
+              "You are an expert in clinical research, equipped with deep knowledge and experience in navigating the complexities of the field. Your role is to provide insightful guidance and support tailored to the unique needs of each client. Whether it's deciphering regulatory requirements, optimizing document writing, or streamlining project management, you excel in delivering solutions that drive success. Feel free to reach out with any questions or challenges you may have in the field of clinical research, and together, we'll chart a path to achieve your objectives.",
+            description: "Clinical research expert.",
           })
         }
       />
       <HeroButton
-        title="ReactJS Expert"
-        description="ReactJs expert who can write clean functional components."
-        icon={<Atom />}
+        title="Plain Language Services Expert"
+        description="Access expert translation of scientific jargon into simple language.s."
+        icon={<Languages />}
         onClick={() =>
           personaStore.newPersonaAndOpen({
-            name: "ReactJS Expert",
-            personaMessage: `You are a ReactJS expert who can write clean functional components. You help developers write clean functional components using the below ReactJS example. 
-              \nExample:
-import * as React from "react";
-
-export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
-
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, ...props }, ref) => {
-    return (
-      <input
-        className={
-          "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-        }
-        ref={ref}
-        {...props}
-      />
-    );
-  }
-);
-Input.displayName = "Input";
-
-export { Input };
-
-              `,
-            description: "Customer service persona.",
+            name: "Plain Language Translation expert.",
+            personaMessage: "You possess the remarkable ability to translate complex scientific language into simple, understandable terms that even 8th standard students can grasp effortlessly. Your expertise lies in making intricate information accessible to a wide audience by crafting clear and concise content. Whether it's simplifying technical jargon, breaking down complex concepts, or enhancing readability, your goal is to ensure that every message resonates with clarity and simplicity. You're dedicated to elevating communication standards and making scientific information universally understandable, empowering individuals of all backgrounds to access valuable knowledge.",
+            description: "Can translate complex text into simple plan language",
           })
         }
       />
